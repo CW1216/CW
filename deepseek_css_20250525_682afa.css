@@ -1,0 +1,166 @@
+/* Fonts & Colors Based on Interviews */
+:root {
+  /* Colors */
+  --op-red: #D70000;       /* Fanatic energy */
+  --op-blue: #0066CC;      /* Casual trust */
+  --op-gold: #FFD700;      /* Critic prestige */
+  --op-black: #1A1A1A;     /* Manga aesthetic */
+  --op-cream: #FFF5E0;     /* Easy reading (casual) */
+
+  /* Fonts */
+  --font-heading: 'Bangers', cursive;     /* Fun vibe */
+  --font-body: 'Roboto', sans-serif;      /* Readability */
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-body);
+  background-color: var(--op-cream);
+  color: var(--op-black);
+  margin: 0;
+}
+
+header {
+  background-color: var(--op-red);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* Hero Banner */
+.hero {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.slide.active {
+  display: flex;
+}
+
+#fanatic-slide {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/manga-collage.jpg');
+}
+
+#casual-slide {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/gear5-bg.jpg');
+}
+
+#critic-slide {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/debate-bg.jpg');
+}
+
+/* World Map (Fanatic) */
+.world-map {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.map-popup {
+  display: none;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Progress Tracker (Casual) */
+.tracker {
+  background: var(--op-blue);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.arc-progress span {
+  margin-right: 20px;
+  font-size: 1.1rem;
+}
+
+.arc-progress .current {
+  color: var(--op-gold);
+  font-weight: bold;
+}
+
+/* Debate Hub (Critic) */
+.debate-topic {
+  background: white;
+  border: 3px solid var(--op-gold);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.arguments {
+  display: flex;
+  gap: 20px;
+  margin: 1rem 0;
+}
+
+.pro, .con {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.pro {
+  background: rgba(255, 0, 0, 0.1);
+  border-left: 4px solid var(--op-red);
+}
+
+.con {
+  background: rgba(0, 128, 0, 0.1);
+  border-left: 4px solid green;
+}
+
+.vote-button {
+  background: var(--op-gold);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 10px;
+  font-family: var(--font-heading);
+  cursor: pointer;
+}
+
+/* Spoiler Toggle */
+.spoiler-toggle {
+  background: var(--op-black);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+body.hide-spoilers .spoiler {
+  display: none;
+}

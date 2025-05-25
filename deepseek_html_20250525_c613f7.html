@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Piece: Grand Line Community</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="assets/logo.png" alt="One Piece" class="logo">
+    <nav>
+      <a href="#home" class="active">🏠 Home</a>
+      <a href="#map">🗺️ World Map</a>
+      <a href="#schedule">📅 Schedule</a>
+      <a href="#debates">💬 Debates</a>
+      <a href="#play">🎮 Quizzes</a>
+    </nav>
+    <div class="user-controls">
+      <label class="spoiler-toggle">
+        <input type="checkbox" id="spoiler-toggle"> Hide Spoilers
+      </label>
+      <button class="crew-role">👒 Pick Your Crew</button>
+    </div>
+  </header>
+
+  <!-- Hero Banner (Rotating Slides) -->
+  <section class="hero">
+    <div class="slide active" id="fanatic-slide">
+      <h1>NEW CHAPTER 1105 SPOILERS LIVE!</h1>
+      <p>Join the theory discussion with fellow Nakama!</p>
+      <button>Set Sail →</button>
+    </div>
+    <div class="slide" id="casual-slide">
+      <h1>MISSED EPISODE 1015?</h1>
+      <p>Watch our 60-second recap ⏱️</p>
+      <button>Watch Now</button>
+    </div>
+    <div class="slide" id="critic-slide">
+      <h1>DEBATE: IS GEAR 5 TOO SILLY?</h1>
+      <p>Vote and defend your stance!</p>
+      <button>Join Debate</button>
+    </div>
+  </section>
+
+  <!-- Personalized Feed Toggles -->
+  <section class="feed-toggles">
+    <button class="toggle active" data-filter="all">⚡ All Crew</button>
+    <button class="toggle" data-filter="casual">🍿 Quick Bites</button>
+    <button class="toggle" data-filter="fanatic">🔍 Deep Dives</button>
+    <button class="toggle" data-filter="critic">💡 Critical Takes</button>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <!-- World Map (Fanatic Focus) -->
+    <section id="map" class="content-section fanatic">
+      <h2>🌎 Explore the Grand Line</h2>
+      <div class="world-map">
+        <img src="assets/world-map.png" alt="One Piece World Map" usemap="#islands">
+        <map name="islands">
+          <area shape="rect" coords="100,200,150,250" href="#alabasta" alt="Alabasta" title="Alabasta Arc">
+          <!-- More islands... -->
+        </map>
+      </div>
+      <div class="map-popup" id="alabasta">
+        <h3>Alabasta Arc (Episodes 92-130)</h3>
+        <p><strong>Key Moments:</strong> Crocodile fight, Vivi's speech</p>
+        <p><strong>Fan Theories:</strong> Is Cobra alive?</p>
+      </div>
+    </section>
+
+    <!-- Progress Tracker (Casual Focus) -->
+    <section id="progress" class="content-section casual">
+      <h2>⏳ Your One Piece Journey</h2>
+      <div class="tracker">
+        <div class="arc-progress">
+          <span class="completed">East Blue ✓</span>
+          <span class="completed">Alabasta ✓</span>
+          <span class="current">Skypiea ➔</span>
+          <span>Enies Lobby</span>
+        </div>
+        <div class="recap">
+          <h3>Last Watched: Episode 1015</h3>
+          <ul>
+            <li>Luffy awakened his Devil Fruit</li>
+            <li>Kaido's backstory revealed</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Debate Hub (Critic Focus) -->
+    <section id="debates" class="content-section critic">
+      <h2>⚔️ Grand Line Debates</h2>
+      <div class="debate-topic">
+        <h3>Is Gear 5 Too Silly for One Piece's Tone?</h3>
+        <div class="arguments">
+          <div class="pro">
+            <h4>Undermines Luffy's Growth (127 agrees)</h4>
+            <p>"Gear 5's cartoonish style clashes with serious arcs like Wano." - @PirateKing2023</p>
+          </div>
+          <div class="con">
+            <h4>Fits His Chaotic Spirit (98 agrees)</h4>
+            <p>"Luffy's always been ridiculous - this is peak freedom!" - @SunGod4Life</p>
+          </div>
+        </div>
+        <button class="vote-button" data-side="pro">Agree</button>
+        <button class="vote-button" data-side="con">Disagree</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ♥ by the Straw Hat Crew</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
