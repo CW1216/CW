@@ -190,6 +190,7 @@ body.hide-spoilers .spoiler {
   position: relative;
   color: white;
 }
+  
 #critic-slide {
   background-image: url('assets/critic.jpg');
   background-size: cover;
