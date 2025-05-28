@@ -182,4 +182,13 @@ body.hide-spoilers .spoiler {
   overflow: hidden;
 }
 
-
+#casual-slide {
+  position: relative;
+  background-image: url('assets/casual.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 60px 20px;
+  overflow: hidden;
+}
