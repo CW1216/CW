@@ -172,3 +172,11 @@ body.hide-spoilers .spoiler {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+.fanatic {
+  background-image: url('assets/fanatic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Optional: ensures text is readable over the background */
+  padding: 50px 20px; /* Optional: adds spacing within the section */
+}
