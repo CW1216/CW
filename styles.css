@@ -173,7 +173,7 @@ body.hide-spoilers .spoiler {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 #fanatic-slide {
   position: relative;
-  background-image: url('assets/YOUR-IMAGE-NAME.jpg');
+  background-image: url('assets/fanatic.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -182,21 +182,4 @@ body.hide-spoilers .spoiler {
   overflow: hidden;
 }
 
-/* Overlay */
-#fanatic-slide::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* 0.8 = 80% darkness */
-  z-index: 1;
-}
-
-/* Make sure text stays above the overlay */
-#fanatic-slide > * {
-  position: relative;
-  z-index: 2;
-}
 
