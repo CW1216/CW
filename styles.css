@@ -171,11 +171,17 @@ body.hide-spoilers .spoiler {
   margin: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+#fanatic-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+  z-index: 0;
 }
-#fanatic-slide {
-  background-image: url('assets/fanatic.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
+
+#fanatic-slide h1,
+#fanatic-slide p,
+#fanatic-slide button {
+  position: relative;
+  z-index: 1;
 }
