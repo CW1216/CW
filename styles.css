@@ -180,7 +180,6 @@ body.hide-spoilers .spoiler {
   background-position: center;
   background-repeat: no-repeat;
   color: white; /* Keep the text readable */
-  padding: 60px 20px;
   overflow: hidden;
 }
 
