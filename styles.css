@@ -200,3 +200,16 @@ body.hide-spoilers .spoiler {
   position: relative;
   color: white;
 }
+
+.slide h1 {
+  font-size: 3rem; /* Adjust this size as you prefer */
+}
+
+.slide p {
+  font-size: 1.5rem; /* Also adjustable */
+}
+
+.slide button {
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+}
