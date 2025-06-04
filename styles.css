@@ -203,14 +203,14 @@ body.hide-spoilers .spoiler {
 }
 
 .slide h1 {
-  font-size: 4rem; /* Adjust this size as you prefer */
+  font-size: 3rem; /* Adjust this size as you prefer */
 }
 
 .slide p {
-  font-size: 3rem; /* Also adjustable */
+  font-size: 2rem; /* Also adjustable */
 }
 
 .slide button {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 0.75rem 1.5rem;
 }
