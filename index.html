@@ -18,6 +18,13 @@
       <a href="#debates">💬 Debates</a>
       <a href="#play">🎮 Quizzes</a>
     </nav>
+    <section class="login-box">
+  <h3>Login</h3>
+  <input type="text" id="username" placeholder="Username" /><br />
+  <input type="password" id="password" placeholder="Password" /><br />
+  <button onclick="login()">Login</button>
+  <p id="loginStatus"></p>
+</section>
     <div class="user-controls">
       <label class="spoiler-toggle">
         <input type="checkbox" id="spoiler-toggle"> Hide Spoilers
@@ -112,6 +119,15 @@
   </main>
 
   <footer>
+    <button id="feedbackBtn">Give Feedback</button>
+<div id="feedbackModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Your Feedback</h2>
+    <textarea id="feedbackText" rows="4" cols="40"></textarea><br />
+    <button id="submitFeedback">Submit</button>
+  </div>
+</div>
     <p>Made by Group Chopper</p>
   </footer>
 
