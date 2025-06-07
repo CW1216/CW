@@ -270,3 +270,11 @@ body.hide-spoilers .spoiler {
   font-family: var(--font-heading);
   cursor: pointer;
 }
+
+/* Login Box Styles */
+.login-box {
+  margin: 40px;
+  padding: 20px;
+  background-color: #e6f7ff;
+  border-radius: 10px;
+}
