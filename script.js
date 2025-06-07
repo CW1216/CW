@@ -1,8 +1,3 @@
-// Toggle Spoilers
-document.getElementById('spoiler-toggle').addEventListener('change', function() {
-  document.body.classList.toggle('hide-spoilers', this.checked);
-});
-
 // Slideshow Rotation
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
