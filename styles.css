@@ -273,8 +273,8 @@ body.hide-spoilers .spoiler {
 
 /* Login Box Styles */
 .login-box {
-  margin: 40px;
-  padding: 20px;
+  margin: 25px;
+  padding: 10px;
   background-color: #e6f7ff;
-  border-radius: 10px;
+  border-radius: 6px;
 }
