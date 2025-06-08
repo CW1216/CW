@@ -39,11 +39,10 @@ document.querySelectorAll('area').forEach(area => {
   });
 });
 
-// Debate Voting
 document.querySelectorAll('.vote-button').forEach(button => {
-  button.addEventListener('click', function() {
+  button.addEventListener('click', function () {
     const side = this.dataset.side;
-    alert(`Voted ${side === 'pro' ? 'AGREE' : 'DISAGREE'}!`);
+    alert(`Thanks for voting ${side === 'pro' ? 'FOR Gear 5!' : 'AGAINST Gear 5!'}`);
   });
 });
 
