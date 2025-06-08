@@ -272,12 +272,25 @@ body.hide-spoilers .spoiler {
   cursor: pointer;
 }
 
-/* Login Box Styles */
 .login-box {
-  margin: 15px;
+  margin: 0; /* remove outer spacing */
   padding: 5px;
   background-color: #e6f7ff;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.login-box input {
+  height: 25px;
+  font-size: 0.8rem;
+}
+
+.login-box button {
+  height: 28px;
+  font-size: 0.8rem;
+  padding: 0 10px;
 }
 
 /* Toggle Banner Container */
