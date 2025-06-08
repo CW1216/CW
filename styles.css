@@ -15,7 +15,7 @@
 /* Global Styles */
 body {
   font-family: var(--font-body);
-  background-color: var(--op-cream);
+  background-color: var(--op-cream)!important;
   color: var(--op-black);
   margin: 0;
 }
