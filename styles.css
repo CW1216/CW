@@ -499,7 +499,7 @@ body, button, input, select, textarea {
   background-color: #c62828;
 }
 
-.feedbackBtn {
+#feedbackBtn {
 padding: 2px 3px;
   background-color: var(--op-red);
   color: white;
