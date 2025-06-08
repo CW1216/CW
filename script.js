@@ -78,3 +78,31 @@ function login() {
     status.style.color = 'red';
   }
 }
+
+// Populate episode dropdown
+window.onload = function() {
+  const select = document.getElementById("episodeSelect");
+  for (let i = 1; i <= 1130; i++) {
+    const option = document.createElement("option");
+    option.value = i;
+    option.textContent = "Episode " + i;
+    select.appendChild(option);
+  }
+};
+
+// Show popup
+function openEpisodePopup() {
+  document.getElementById("episodePopup").style.display = "block";
+}
+
+// Close popup
+function closeEpisodePopup() {
+  document.getElementById("episodePopup").style.display = "none";
+}
+
+// Submit selected episode
+function submitEpisode() {
+  const selectedEpisode = document.getElementById("episodeSelect").value;
+  document.getElementById("episodeDisplay").textContent = selectedEpisode;
+  closeEpisodePopup();
+}
