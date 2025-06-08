@@ -325,7 +325,7 @@ header nav a {
   padding: 10px 16px;
   border-radius: 10px;
   background-color: #fff;
-  color: #8B0000;
+  color: #0074D9; /* One Piece logo blue */
   font-weight: bold;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -333,8 +333,13 @@ header nav a {
 }
 
 header nav a:hover {
-  background-color: #ffe5e5;
+  background-color: #e6f0ff; /* soft blue hover */
   transform: scale(1.05);
+}
+
+header nav a.active {
+  background-color: #fff; /* same as normal */
+  color: #0074D9;
 }
 
 header nav a.active {
