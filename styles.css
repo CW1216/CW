@@ -278,3 +278,44 @@ body.hide-spoilers .spoiler {
   background-color: #e6f7ff;
   border-radius: 4px;
 }
+
+/* Toggle Banner Container */
+.feed-toggles {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* spacing between buttons */
+  padding: 20px;
+  background: linear-gradient(to right, #003366, #336699);
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 90%;
+  flex-wrap: wrap;
+}
+
+/* Toggle Buttons */
+.toggle {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #003366;
+  cursor: pointer;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* Active Button */
+.toggle.active {
+  background-color: #ffcc00;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Hover Effect */
+.toggle:hover {
+  background-color: #ffeb99;
+  transform: scale(1.03);
+}
+
