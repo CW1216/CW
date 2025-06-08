@@ -498,3 +498,16 @@ body, button, input, select, textarea {
 #submitFeedback:hover {
   background-color: #c62828;
 }
+
+.feedbackBtn {
+padding: 2px 3px;
+  background-color: var(--op-red);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  height: 30px;
+  line-height: 1;
+}
