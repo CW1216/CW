@@ -132,13 +132,13 @@ nav a {
 }
 
 .pro {
-  background: rgba(255, 0, 0, 0.1);
-  border-left: 4px solid var(--op-red);
+  background: rgba(0, 128, 0, 0.1);
+  border-left: 4px solid green;
 }
 
 .con {
-  background: rgba(0, 128, 0, 0.1);
-  border-left: 4px solid green;
+  background: rgba(255, 0, 0, 0.1);
+  border-left: 4px solid var(--op-red);
 }
 
 .vote-button {
