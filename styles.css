@@ -324,7 +324,7 @@ header nav a {
   margin: 0 10px;
   padding: 10px 16px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #ffcc00;
   color: #000000;
   font-weight: bold;
   text-decoration: none;
@@ -339,6 +339,6 @@ header nav a:hover {
 
 header nav a.active {
   background-color: #fff; /* same as normal */
-  color: #0074D9;
+  color: #000000;
 }
 
