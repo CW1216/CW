@@ -501,7 +501,7 @@ body, button, input, select, textarea {
 
 #feedbackBtn {
 padding: 2px 3px;
-  background-color: var(--op-red);
+  background-color: var(--op-blue);
   color: white;
   border: none;
   border-radius: 4px;
