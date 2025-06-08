@@ -278,10 +278,10 @@ body.hide-spoilers .spoiler {
   padding: 6px 10px;
   display: flex;
   flex-direction: column;
-  gap: 4px;          /* smaller gap */
+  gap: 1px;          /* smaller gap */
   max-width: 180px;
   font-size: 13px;
-  height: 80px;      /* limit total height */
+  height: 60px;      /* limit total height */
   box-sizing: border-box;
 }
 
@@ -292,7 +292,7 @@ body.hide-spoilers .spoiler {
   font-size: 13px;
   width: 100%;
   box-sizing: border-box;
-  height: 24px;      /* fixed small height */
+  height: 18px;      /* fixed small height */
 }
 
 .login-box button {
