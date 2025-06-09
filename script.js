@@ -120,32 +120,8 @@ function submitEpisode() {
 
   const auth = getAuth();
 
-  // Sign Up
-  document.getElementById('signup-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const email = document.getElementById('signup-email').value;
-    const password = document.getElementById('signup-password').value;
-    createUserWithEmailAndPassword(auth, email, password)
-      .then(userCredential => {
-        alert("Signup successful!");
-      })
-      .catch(error => {
-        alert(error.message);
-      });
-  });
 
-  // Login
-  document.getElementById('login-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const email = document.getElementById('login-email').value;
-    const password = document.getElementById('login-password').value;
-    signInWithEmailAndPassword(auth, email, password)
-      .then(userCredential => {
-        alert("Login successful!");
-      })
-      .catch(error => {
-        alert(error.message);
-      });
-  });
-</script>
-Add comment
+function toggleLoginPopup() {
+  const popup = document.getElementById("loginPopup");
+  popup.style.display = popup.style.display === "block" ? "none" : "block";
+}
