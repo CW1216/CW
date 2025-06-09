@@ -1,195 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>One Piece: Grand Line Community</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDKNcMNJjaSPiu0JOeKMX2QbJG1hogyop0",
-    authDomain: "onepiece-fansite.firebaseapp.com",
-    projectId: "onepiece-fansite",
-    storageBucket: "onepiece-fansite.firebasestorage.app",
-    messagingSenderId: "449909053920",
-    appId: "1:449909053920:web:fe6c4a0da7f7786156f385",
-    measurementId: "G-G5LCW3NJJT"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0d0d" />
+  <title>One Piece Fan Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico" />
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <img src="assets/logo.png" alt="One Piece" class="logo">
+    <img src="assets/logo.png" alt="One Piece Logo" class="logo" />
     <nav>
-      <a href="index.html" class="active">🏠 Home</a>
-      <a href="#map">🗺️ World Map</a>
-      <a href="schedule.html">📅 Schedule</a>
-      <a href="#debates">💬 Debates</a>
-      <a href="https://youtube.com/playlist?list=PLOPhDUWE7RApAcjgl_2kwAGX0RbPIR8gC&si=K8ZlV9oVgGAyKDkX">🎮 Quizzes</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Episodes</a></li>
+        <li><a href="#">Characters</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
     </nav>
-    <button onclick="toggleLoginPopup()" class="login-button">Login / Sign Up</button>
-</header>
-  
-  <!-- Hero Banner (Rotating Slides) -->
-  <section class="hero">
-    <div class="slide active" id="fanatic-slide" style="background-image: url('assets/fanatic.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white;">
-      <h1>NEW CHAPTER 1150 SPOILERS LIVE!</h1>
-      <p>Join the theory discussion with fellow Nakama!</p>
-      <button onclick="location.href=' https://www.reddit.com/r/OnePiece/comments/1l0r02d/one_piece_chapter_1150_official_release_discussion/'">Set Sail →</button>
-    </div>
-    <div class="slide" id="casual-slide" style="background-image: url('assets/casual.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white;">
-      <h1>WHAT'S ON EPISODE 1130?</h1>
-      <p>Watch preview of the episode!</p>
-      <button onclick="location.href='https://youtu.be/hlNvkdq8xfE?si=aElYEHR0tGGzbiYQ'">Watch Now</button>
-    </div>
-    <div class="slide" id="critic-slide" style="background-image: url('assets/critic.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white;">
-      <h1>DEBATE: IS GEAR 5 TOO SILLY?</h1>
-      <p>Vote and defend your stance!</p>
-      <button onclick="location.href='#debates'">Join Debate</button>
-    </div>
-  </section>
+    <button onclick="toggleLoginPopup()">Log In</button>
+  </header>
 
-  <!-- Personalized Feed Toggles -->
-  <section class="feed-toggles">
-    <button class="toggle active" data-filter="all">⚡ All Crew</button>
-    <button class="toggle" data-filter="casual">🍿 Quick Bites</button>
-    <button class="toggle" data-filter="fanatic">🔍 Deep Dives</button>
-    <button class="toggle" data-filter="critic">💡 Critical Takes</button>
-  </section>
-
-  <!-- Main Content -->
   <main>
-    <!-- World Map (Fanatic Focus) -->
-    <section id="map" class="content-section fanatic">
-      <h2>🌎 Explore the Grand Line</h2>
-      <div class="world-map">
-        <img src="assets/world-map.png" alt="One Piece World Map" usemap="#islands" class="world-map-img">
-        <map name="islands">
-          <area shape="rect" coords="100,200,150,250" href="#alabasta" alt="Alabasta" title="Alabasta Arc">
-          <!-- More islands... -->
-        </map>
-      </div>
-      <div class="map-popup" id="alabasta">
-        <h3>Alabasta Arc (Episodes 92-130)</h3>
-        <p><strong>Key Moments:</strong> Crocodile fight, Vivi's speech</p>
-        <p><strong>Fan Theories:</strong> Is Cobra alive?</p>
-      </div>
+    <section class="hero">
+      <img src="assets/hero.jpg" alt="One Piece Main Visual" />
+      <h1>Welcome to the Grand Line</h1>
     </section>
 
-    <!-- Progress Tracker (Casual Focus) -->
-<section class="tracker content-section casual">
-  <h2>⏳ YOUR ONE PIECE JOURNEY</h2>
-    <div class="arc-progress">
-  <span class="completed">East Blue ✓</span>
-  <span class="completed">Alabasta ✓</span>
-  <span class="completed">Skypiea ✓</span>
-  <span class="completed">Water 7 ✓</span>
-  <span class="completed">Enies Lobby ✓</span>
-  <span class="completed">Wano ✓</span>
-  <span class="current">➔Egghead Arc</span>
+    <section class="latest-episode">
+      <h2>Latest Episode</h2>
+      <div class="episode-card" onclick="openEpisodePopup()">
+        <img src="assets/episode1071.jpg" alt="Episode 1071" />
+        <h3>Episode 1071: Gear 5 Unleashed!</h3>
+        <p>Luffy’s ultimate form shakes the world...</p>
       </div>
-<p class="latest"><strong>Last Watched: Episode <span id="episodeDisplay">1130</span></strong></p>
-
-  <ul class="milestones">
-    <li>Kuma’s Tragic Past</li>
-    <li>Rocks Pirates’ Chaos</li>
-    <li>Elbaf’s Mysteries</li>
-  </ul>
-
-    <p>Not your last watched episode? Update the episode now!</p>
-  <button class="update-button" onclick="openEpisodePopup()">Update</button>
-</section>
-
-    <!-- Debate Hub (Critic Focus) -->
-<div id="debates" class="debate-section content-section critic">
-  <h2>Is Gear 5 too silly?</h2>
-
-  <div class="debate-argument pro">
-    <h3>Fits His Chaotic Spirit <span>(98 votes)</span></h3>
-    <p>"Luffy's always been ridiculous — this is peak freedom!" – @SunGod4Life</p>
-    <button class="vote-button" data-side="pro">Agree</button>
-  </div>
-
-  <div class="debate-argument con">
-    <h3>Undermines Luffy's Growth <span>(127 votes)</span></h3>
-    <p>"Gear 5's cartoonish style clashes with serious arcs like Wano." – @PirateKing2023</p>
-    <button class="vote-button" data-side="con">Agree</button>
-  </div>
-</div>
+    </section>
   </main>
 
-  <footer>
-    <button id="feedbackBtn">Give Feedback</button>
-<div id="feedbackModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h2>Your Feedback</h2>
-    <textarea id="feedbackText" rows="4" cols="40"></textarea><br />
-    <button id="submitFeedback">Submit</button>
-  </div>
-</div>
-    <p>Made by Group Chopper</p>
-  </footer>
-
-<div id="episodePopup" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="closeEpisodePopup()">&times;</span>
-    <h3>Update Your Episode</h3>
-    <label for="episodeSelect">Choose Episode:</label>
-    <select id="episodeSelect">
-      <!-- JavaScript will fill this -->
-    </select>
-    <button onclick="submitEpisode()">Save</button>
-  </div>
-</div>
-  
-  <script src="script.js"></script>
-  <script src="js/imageMapResizer.min.js"></script>
-<script>
-  window.onload = function() {
-    imageMapResize();
-  };
-  
+  <!-- LOGIN POPUP -->
   <div id="loginPopup" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="toggleLoginPopup()">&times;</span>
-    <h2>Welcome!</h2>
-    <input type="email" id="email" placeholder="Email" required><br>
-    <input type="password" id="password" placeholder="Password" required><br>
-    <button onclick="signUp()">Sign Up</button>
-    <button onclick="logIn()">Log In</button>
+    <div class="popup-content">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="logIn()">Log In</button>
+      <button onclick="signUp()">Sign Up</button>
+      <button onclick="toggleLoginPopup()">Close</button>
+    </div>
   </div>
-</div>
-    
-<script type="module">
-  // Import Firebase SDK
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
-  const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_DOMAIN",
-    projectId: "YOUR_ID",
-    appId: "YOUR_APP_ID"
-  };
+  <!-- EPISODE POPUP -->
+  <div id="episodePopup" class="popup">
+    <div class="popup-content">
+      <h2>Episode 1071: Gear 5 Unleashed!</h2>
+      <p>Watch now on Crunchyroll or Netflix!</p>
+      <textarea placeholder="Leave a comment..."></textarea>
+      <button onclick="submitEpisode()">Submit</button>
+      <button onclick="closeEpisodePopup()">Close</button>
+    </div>
+  </div>
 
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-</script>
+  <!-- Script files -->
+  <script src="script.js"></script>
 
+  <!-- Firebase (combined and fixed) -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDKNcMNJjaSPiu0JOeKMX2QbJG1hogyop0",
+      authDomain: "onepiece-fansite.firebaseapp.com",
+      projectId: "onepiece-fansite",
+      storageBucket: "onepiece-fansite.appspot.com", // fixed
+      messagingSenderId: "449909053920",
+      appId: "1:449909053920:web:fe6c4a0da7f7786156f385",
+      measurementId: "G-G5LCW3NJJT"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth(app);
+
+    window.signUp = function () {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          alert("Signed up!");
+        })
+        .catch((error) => {
+          alert("Error: " + error.message);
+        });
+    };
+
+    window.logIn = function () {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          alert("Logged in!");
+        })
+        .catch((error) => {
+          alert("Error: " + error.message);
+        });
+    };
+  </script>
 </body>
 </html>
