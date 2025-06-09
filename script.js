@@ -75,7 +75,7 @@ function login() {
     status.style.color = 'green';
   } else {
     status.textContent = 'Invalid credentials. Try again!';
-    status.style.color = 'red';
+    status.style.color = 'yellow';
   }
 }
 
