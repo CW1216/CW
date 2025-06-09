@@ -106,3 +106,44 @@ function toggleLoginPopup() {
   popup.style.display = popup.style.display === "block" ? "none" : "block";
 }
 
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDKNcMNJjaSPiu0JOeKMX2QbJG1hogyop0",
+    authDomain: "onepiece-fansite.firebaseapp.com",
+    projectId: "onepiece-fansite",
+    storageBucket: "onepiece-fansite.firebasestorage.app",
+    messagingSenderId: "449909053920",
+    appId: "1:449909053920:web:fe6c4a0da7f7786156f385"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  window.signUp = function () {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        alert("Signed up successfully!");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+
+  window.logIn = function () {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        alert("Logged in successfully!");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+</script>
+
