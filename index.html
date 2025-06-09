@@ -163,5 +163,17 @@
   window.onload = function() {
     imageMapResize();
   };
+  
+  <div id="loginPopup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="toggleLoginPopup()">&times;</span>
+    <h2>Welcome!</h2>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="logIn()">Log In</button>
+  </div>
+</div>
+
 </body>
 </html>
