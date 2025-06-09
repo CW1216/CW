@@ -32,7 +32,28 @@
 </head>
 <body>
   <!-- Header -->
+  <header>
+    <img src="assets/logo.png" alt="One Piece" class="logo">
+    <nav>
+      <a href="index.html" class="active">🏠 Home</a>
+      <a href="#map">🗺️ World Map</a>
+      <a href="schedule.html">📅 Schedule</a>
+      <a href="#debates">💬 Debates</a>
+      <a href="https://youtube.com/playlist?list=PLOPhDUWE7RApAcjgl_2kwAGX0RbPIR8gC&si=K8ZlV9oVgGAyKDkX">🎮 Quizzes</a>
+    </nav>
+    <form id="signup-form">
+  <input type="email" id="signup-email" placeholder="Email" required>
+  <input type="password" id="signup-password" placeholder="Password" required>
+  <button type="submit">Sign Up</button>
+</form>
 
+<form id="login-form">
+  <input type="email" id="login-email" placeholder="Email" required>
+  <input type="password" id="login-password" placeholder="Password" required>
+  <button type="submit">Login</button>
+</form>
+</header>
+  
   <!-- Hero Banner (Rotating Slides) -->
   <section class="hero">
     <div class="slide active" id="fanatic-slide" style="background-image: url('assets/fanatic.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white;">
