@@ -272,47 +272,6 @@ body.hide-spoilers .spoiler {
   cursor: pointer;
 }
 
-.login-box {
-  background-color: #e6f7ff;
-  border-radius: 4px;
-  padding: 6px 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 1px;          /* smaller gap */
-  max-width: 180px;
-  font-size: 13px;
-  height: 80px;      /* limit total height */
-  box-sizing: border-box;
-}
-
-.login-box input {
-  padding: 4px 6px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 13px;
-  width: 100%;
-  box-sizing: border-box;
-  height: 20px;      /* fixed small height */
-}
-
-.login-box button {
-  padding: 2px 3px;
-  background-color: var(--op-red);
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 13px;
-  height: 28px;
-  line-height: 1;
-  justify-content: center;
-}
-
-.login-box button:hover {
-  background-color: #a80000;
-}
-
 /* Toggle Banner Container */
 .feed-toggles {
   display: flex;
@@ -534,5 +493,41 @@ padding: 2px 3px;
 .close {
   float: right;
   font-size: 28px;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: #fff;
+  border: 2px solid #222;
+  z-index: 1000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 20px;
   cursor: pointer;
 }
