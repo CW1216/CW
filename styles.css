@@ -519,9 +519,15 @@ padding: 2px 3px;
 }
 
 .popup-content {
+  width: 300px;
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
 }
 
 .close-btn {
