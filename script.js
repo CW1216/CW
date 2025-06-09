@@ -106,4 +106,3 @@ function toggleLoginPopup() {
   popup.style.display = popup.style.display === "block" ? "none" : "block";
 }
 
-
