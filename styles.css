@@ -498,7 +498,7 @@ padding: 2px 3px;
 
 .login-button {
   background-color: #FFD700;
-  color: white;
+  color: black;
   font-family: var(--font-heading);
   border: none;
   padding: 6px 12px;
