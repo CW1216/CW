@@ -15,14 +15,10 @@ document.querySelectorAll('.toggle').forEach(button => {
   button.addEventListener('click', function() {
     document.querySelectorAll('.toggle').forEach(btn => btn.classList.remove('active'));
     this.classList.add('active');
-    
+
     const filter = this.dataset.filter;
     document.querySelectorAll('.content-section').forEach(section => {
-      if (filter === 'all' || section.classList.contains(filter)) {
-        section.style.display = 'block';
-      } else {
-        section.style.display = 'none';
-      }
+      section.style.display = (filter === 'all' || section.classList.contains(filter)) ? 'block' : 'none';
     });
   });
 });
@@ -32,13 +28,12 @@ document.querySelectorAll('area').forEach(area => {
   area.addEventListener('click', function(e) {
     e.preventDefault();
     const popupId = this.getAttribute('href').substring(1);
-    document.querySelectorAll('.map-popup').forEach(popup => {
-      popup.style.display = 'none';
-    });
+    document.querySelectorAll('.map-popup').forEach(popup => popup.style.display = 'none');
     document.getElementById(popupId).style.display = 'block';
   });
 });
 
+// Gear 5 Vote
 document.querySelectorAll('.vote-button').forEach(button => {
   button.addEventListener('click', function () {
     const side = this.dataset.side;
@@ -46,7 +41,7 @@ document.querySelectorAll('.vote-button').forEach(button => {
   });
 });
 
-// Feedback Modal Functionality
+// Feedback Modal
 const modal = document.getElementById('feedbackModal');
 const btn = document.getElementById('feedbackBtn');
 const span = document.querySelector('.close-btn');
@@ -64,7 +59,7 @@ submitFeedback.onclick = () => {
   modal.style.display = 'none';
 };
 
-// Login Simulation Functionality
+// Login Function
 function login() {
   const user = document.getElementById('username').value;
   const pass = document.getElementById('password').value;
@@ -79,49 +74,35 @@ function login() {
   }
 }
 
-// Populate episode dropdown
+// Episode Selector
 window.onload = function() {
   const select = document.getElementById("episodeSelect");
-  for (let i = 1; i <= 1130; i++) {
-    const option = document.createElement("option");
-    option.value = i;
-    option.textContent = "Episode " + i;
-    select.appendChild(option);
+  if (select) {
+    for (let i = 1; i <= 1130; i++) {
+      const option = document.createElement("option");
+      option.value = i;
+      option.textContent = "Episode " + i;
+      select.appendChild(option);
+    }
   }
 };
 
-// Show popup
 function openEpisodePopup() {
   document.getElementById("episodePopup").style.display = "block";
 }
 
-// Close popup
 function closeEpisodePopup() {
   document.getElementById("episodePopup").style.display = "none";
 }
 
-// Submit selected episode
 function submitEpisode() {
   const selectedEpisode = document.getElementById("episodeSelect").value;
-  document.getElementById("episodeDisplay").textContent = selectedEpisode;
-
-  <script type="module">
-  // (use same Firebase import and config here)
-
-  const auth = getAuth();
-}
-
+  document.getElementById("episodeDisplay").textContent = "Episode " + selectedEpisode;
   closeEpisodePopup();
 }
-
-
-  <script type="module">
-  // (use same Firebase import and config here)
-
-  const auth = getAuth();
-
 
 function toggleLoginPopup() {
   const popup = document.getElementById("loginPopup");
   popup.style.display = popup.style.display === "block" ? "none" : "block";
 }
+
