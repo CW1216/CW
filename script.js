@@ -111,6 +111,15 @@ function submitEpisode() {
   const auth = getAuth();
 }
 
+  closeEpisodePopup();
+}
+
+
+  <script type="module">
+  // (use same Firebase import and config here)
+
+  const auth = getAuth();
+
   // Sign Up
   document.getElementById('signup-form').addEventListener('submit', function (e) {
     e.preventDefault();
@@ -139,6 +148,4 @@ function submitEpisode() {
       });
   });
 </script>
-
-  closeEpisodePopup();
-}
+Add comment
