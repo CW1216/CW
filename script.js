@@ -106,3 +106,10 @@ function toggleLoginPopup() {
   popup.style.display = popup.style.display === "block" ? "none" : "block";
 }
 
+function showFanSection(sectionId) {
+  const sections = ['fanaticSection', 'casualSection', 'criticSection'];
+
+  sections.forEach(id => {
+    document.getElementById(id).style.display = (id === sectionId) ? 'block' : 'none';
+  });
+}
