@@ -539,7 +539,9 @@ padding: 2px 3px;
   cursor: pointer;
 }
 
-section id="fanaticSection""casualSection""criticSection" {
+#fanaticSection,
+#casualSection,
+#criticSection {
   padding: 30px;
   margin: 20px auto;
   background: #f9f9f9;
@@ -548,7 +550,9 @@ section id="fanaticSection""casualSection""criticSection" {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-section h2 {
+#fanaticSection h2,
+#casualSection h2,
+#criticSection h2 {
   color: var(--op-blue);
   margin-bottom: 15px;
   font-size: 24px;
