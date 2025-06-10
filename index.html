@@ -83,22 +83,25 @@
     </div>
   </section>
 
-  <!-- === FANATIC FAN SECTION === -->
-<section id="fanaticSection">
-  <h2>For Fanatic Fans</h2>
-  <!-- We'll insert features like VR experience, digital museum, etc. here -->
+  <div class="fan-toggle-buttons">
+  <button onclick="showFanSection('fanaticSection')">Fanatic Fans</button>
+  <button onclick="showFanSection('casualSection')">Casual Fans</button>
+  <button onclick="showFanSection('criticSection')">Critic Fans</button>
+</div>
+
+<section id="fanaticSection" style="display: none;">
+  <h2>Fanatic Fan Experience</h2>
+  <!-- Content goes here -->
 </section>
 
-<!-- === CASUAL FAN SECTION === -->
-<section id="casualSection">
-  <h2>For Casual Fans</h2>
-  <!-- Features like short videos, recap, polls, etc. will go here -->
+<section id="casualSection" style="display: none;">
+  <h2>Casual Fan Experience</h2>
+  <!-- Content goes here -->
 </section>
 
-<!-- === CRITIC FAN SECTION === -->
-<section id="criticSection">
-  <h2>For Critical Fans</h2>
-  <!-- Critical forum, roundtable, AMA, etc. go here -->
+<section id="criticSection" style="display: none;">
+  <h2>Critic Fan Experience</h2>
+  <!-- Content goes here -->
 </section>
 
   <!-- Personalized Feed Toggles -->
