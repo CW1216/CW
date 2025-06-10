@@ -539,7 +539,7 @@ padding: 2px 3px;
   cursor: pointer;
 }
 
-section {
+section id="fanaticSection""casualSection""criticSection" {
   padding: 30px;
   margin: 20px auto;
   background: #f9f9f9;
