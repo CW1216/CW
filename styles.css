@@ -557,3 +557,23 @@ padding: 2px 3px;
   margin-bottom: 15px;
   font-size: 24px;
 }
+
+.fan-toggle-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fan-toggle-buttons button {
+  background-color: var(--op-blue);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.fan-toggle-buttons button:hover {
+  background-color: #0059b3;
+}
