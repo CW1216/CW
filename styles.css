@@ -558,22 +558,41 @@ padding: 2px 3px;
   font-size: 24px;
 }
 
-.fan-toggle-buttons {
+.fan-banner {
+  background-color: #f4f4f4;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin: 30px auto;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+}
+
+.fan-banner-title {
+  font-size: 24px;
+  font-weight: bold;
   margin-bottom: 20px;
+  color: #1a1a1a;
 }
 
 .fan-toggle-buttons button {
   background-color: var(--op-blue);
   color: white;
   border: none;
-  padding: 10px 15px;
-  margin: 0 8px;
+  padding: 10px 20px;
+  margin: 0 10px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .fan-toggle-buttons button:hover {
   background-color: #0059b3;
+}
+
+.fan-toggle-buttons {
+  text-align: center;
+  margin-bottom: 20px;
 }
