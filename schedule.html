@@ -18,14 +18,51 @@
       <a href="#index.html#debates">💬 Debates</a>
       <a href="https://youtube.com/playlist?list=PLOPhDUWE7RApAcjgl_2kwAGX0RbPIR8gC&si=K8ZlV9oVgGAyKDkX">🎮 Quizzes</a>
     </nav>
-    <section class="login-box">
-  <input type="text" id="username" placeholder="Username" />
-  <input type="password" id="password" placeholder="Password" />
-  <button onclick="login()">Login</button>
-  <p id="loginStatus"></p>
-</section>
-  </header>
+    <button onclick="toggleLoginPopup()" class="login-button">Login / Sign Up</button>
+    
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-auth.js";
 
+  const firebaseConfig = {
+    apiKey: "AIzaSyDKNcMNJjaSPiu0JOeKMX2QbJG1hogyop0",
+    authDomain: "onepiece-fansite.firebaseapp.com",
+    projectId: "onepiece-fansite",
+    storageBucket: "onepiece-fansite.firebasestorage.app",
+    messagingSenderId: "449909053920",
+    appId: "1:449909053920:web:fe6c4a0da7f7786156f385"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  window.signUp = function () {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        alert("Signed up successfully!");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+
+  window.logIn = function () {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        alert("Logged in successfully!");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+</script>
+
+</header>
+  
 <main>
   <section class="schedule-page">
     <h2>📅One Piece Chapter Release Schedule for 2025</h2>
