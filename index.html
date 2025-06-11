@@ -101,7 +101,7 @@
     <p>
       Welcome to the <strong>Grand Line Forum</strong> — a space dedicated to the most passionate One Piece fans to explore deep lore, hidden clues, and emotional themes. From legendary theories to character arcs, this forum is where devoted fans connect, speculate, and celebrate their shared obsession.
     </p>
-    <button class="feature-btn">Join the Grand Line Talk</button>
+    <button class="feature-btn coming-soon">Join the Grand Line Talk</button>
   </div>
 
   <div class="feature-box">
@@ -109,7 +109,7 @@
     <p>
       A safe space for respectful critical discussion. Share your thoughts on pacing, plot arcs, and narrative structure with fellow fans who appreciate intellectual conversation.
     </p>
-    <button class="feature-btn">Enter Critique Forum</button>
+    <button class="feature-btn coming-soon">Enter Critique Forum</button>
   </div>
 
   <div class="feature-box">
@@ -117,7 +117,7 @@
     <p>
       Pitch your wildest One Piece theories or challenge others in respectful, moderated debates. Let the smartest minds in the fandom clash over what’s really going on in Oda’s world!
     </p>
-    <button class="feature-btn">Start a Debate</button>
+    <button class="feature-btn coming-soon">Start a Debate</button>
   </div>
 
   <div class="feature-box">
@@ -125,7 +125,7 @@
     <p>
       New to the fandom? Join the Starter Circle — a friendly zone for casual fans to ask questions, share reactions, and get recommendations without feeling lost.
     </p>
-    <button class="feature-btn">Join the Circle</button>
+    <button class="feature-btn coming-soon">Join the Circle</button>
   </div>
 </div>
 
@@ -137,7 +137,7 @@
     <p>
       Quick recaps of major arcs and emotional moments for those who want the essence of the journey without the time commitment. Perfect for busy fans or newcomers!
     </p>
-    <button class="feature-btn">Watch Recaps</button>
+    <button class="feature-btn coming-soon">Watch Recaps</button>
   </div>
 
   <div class="feature-box">
@@ -145,7 +145,7 @@
     <p>
       A collection of the most viral One Piece moments—Luffy’s Gear 5 reveal, Ace’s sacrifice, and more—replayed and remixed in bite-sized video format.
     </p>
-    <button class="feature-btn">See the Highlights</button>
+    <button class="feature-btn coming-soon">See the Highlights</button>
   </div>
 
   <div class="feature-box">
@@ -153,7 +153,7 @@
     <p>
       Dive into deep fan-made analyses, character studies, and theory breakdowns. Curated content that entertains while sparking intellectual curiosity.
     </p>
-    <button class="feature-btn">Watch Essays</button>
+    <button class="feature-btn coming-soon">Watch Essays</button>
   </div>
 </div>
 
@@ -165,7 +165,7 @@
     <p>
       A virtual wall of fan-created art celebrating everything from epic battles to quiet moments. Submit and admire stunning One Piece visuals.
     </p>
-    <button class="feature-btn">View Gallery</button>
+    <button class="feature-btn coming-soon">View Gallery</button>
   </div>
 
   <div class="feature-box">
@@ -173,7 +173,7 @@
     <p>
       Dive into the creativity of the fandom! Upload your cosplay photos and explore how others have brought their favorite Straw Hats to life.
     </p>
-    <button class="feature-btn">Show Me Cosplay</button>
+    <button class="feature-btn coming-soon">Show Me Cosplay</button>
   </div>
 
   <div class="feature-box">
@@ -181,7 +181,7 @@
     <p>
       Join seasonal events where fans create videos, poems, or art to honor their favorite characters. Winners get featured and rewarded!
     </p>
-    <button class="feature-btn">Enter Contest</button>
+    <button class="feature-btn coming-soon">Enter Contest</button>
   </div>
 </div>
 
@@ -193,7 +193,7 @@
     <p>
       A digital timeline that relives iconic arcs, battles, and bonds. Explore milestones in One Piece history and see how far the crew has come.
     </p>
-    <button class="feature-btn">Explore the Museum</button>
+    <button class="feature-btn coming-soon">Explore the Museum</button>
   </div>
 
   <div class="feature-box">
@@ -201,7 +201,7 @@
     <p>
       A space where fans contribute their personal One Piece stories, favorite quotes, or artwork that marked their own emotional journey.
     </p>
-    <button class="feature-btn">Visit the Wall</button>
+    <button class="feature-btn coming-soon">Visit the Wall</button>
   </div>
 
   <div class="feature-box">
@@ -209,7 +209,7 @@
     <p>
       A visual journey through the Grand Line: follow key events, character developments, and twists in chronological order.
     </p>
-    <button class="feature-btn">View Timeline</button>
+    <button class="feature-btn coming-soon">View Timeline</button>
   </div>
 </div>
 
@@ -335,6 +335,20 @@
 
     document.getElementById(sectionId).style.display = 'block';
   }
+</script>
+
+<script>
+  function showComingSoon() {
+    alert("Stay tuned!");
+  }
+
+  // Optional: Automatically attach to all buttons with class "coming-soon"
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".coming-soon");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", showComingSoon);
+    });
+  });
 </script>
 
 </body>
