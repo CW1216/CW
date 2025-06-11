@@ -323,5 +323,16 @@
     </div>
   </div>
 
+  <script>
+  function showFanSection(sectionId) {
+    const sections = document.querySelectorAll('.fan-type-section');
+    sections.forEach(section => {
+      section.style.display = 'none';
+    });
+
+    document.getElementById(sectionId).style.display = 'block';
+  }
+</script>
+
 </body>
 </html>
