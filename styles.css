@@ -604,3 +604,53 @@ padding: 2px 3px;
 .feature-btn:hover {
   background-color: #ef6c00;
 }
+
+.patreon-section {
+  background: #f96854;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 20px;
+  margin: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.patreon-logo {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.patreon-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.patreon-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.patreon-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.patreon-content ul li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.patreon-button {
+  background: white;
+  color: #f96854;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.patreon-button:hover {
+  background: #ffe1dc;
+}
