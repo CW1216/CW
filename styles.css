@@ -611,45 +611,90 @@ padding: 2px 3px;
   padding: 2rem;
   text-align: center;
   border-radius: 20px;
-  margin: 2rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  max-width: 1100px;
+  margin: 2rem auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .patreon-logo {
-  max-width: 200px;
+  width: 80px;
   margin-bottom: 1rem;
 }
 
-.patreon-content h2 {
+.patreon-section h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
-.patreon-content p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+.patreon-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
-.patreon-content ul {
+.tier-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.tier-card {
+  background: white;
+  color: #f96854;
+  border: 2px solid #f96854;
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 30%;
+  min-width: 280px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tier-card:hover {
+  transform: translateY(-5px);
+}
+
+.tier-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.tier-card .price {
+  font-size: 1rem;
+  color: #f96854;
+  font-weight: normal;
+}
+
+.tier-card ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-.patreon-content ul li {
-  margin: 0.5rem 0;
-  font-size: 1rem;
+.tier-card ul li {
+  margin-bottom: 0.5rem;
 }
 
 .patreon-button {
+  display: inline-block;
+  margin-top: 2rem;
   background: white;
   color: #f96854;
-  padding: 0.8rem 1.5rem;
+  padding: 0.9rem 1.6rem;
   border-radius: 10px;
   font-weight: bold;
+  font-size: 1rem;
   text-decoration: none;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
+
+.patreon-button:hover {
+  background: #ffe1dc;
+}
+
 
 .patreon-button:hover {
   background: #ffe1dc;
